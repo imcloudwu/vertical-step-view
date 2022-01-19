@@ -1,0 +1,3 @@
+rootProject.name = "VerticalStepViewSample"
+include ':app'
+include ':app:vertical-step-view'

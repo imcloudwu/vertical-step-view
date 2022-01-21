@@ -149,7 +149,7 @@ class VerticalStepView(context: Context, attrs: AttributeSet?, defStyleAttr: Int
         textPaint.getTextBounds(longestStr, 0, longestStr.length, tempBound)
 
         itemWidth = tempBound.width()
-        itemHeight = tempBound.height() + textPaint.textSize.toInt() / 2
+        itemHeight = tempBound.height() + textPaint.textSize.toInt()
     }
 
     fun setSteps(steps: List<String>) {
@@ -250,9 +250,10 @@ class VerticalStepView(context: Context, attrs: AttributeSet?, defStyleAttr: Int
     }
 
     override fun onDetachedFromWindow() {
-        super.onDetachedFromWindow()
+        dotStateManager.reset()
         progressAnimator.cancel()
         twinkleAnimator.cancel()
+        super.onDetachedFromWindow()
     }
 }
 

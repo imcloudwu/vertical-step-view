@@ -1,7 +1,7 @@
 # Vertical-Step-View
 An Android custom view component
 
-<img src="https://github.com/imcloudwu/vertical-step-view/blob/master/screen_shot.gif" width="200">
+<img src="https://github.com/imcloudwu/vertical-step-view/blob/master/screen.gif" width="200">
 
 # Setup
 ##### Step 1. Add the JitPack repository to your build file
